@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    //Objeto 
+    /* Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. um valor de propriedade pode ser uma função, que é então considerada um método do objeto. */
+
+    let pessoa = {
+      nome: 'Rafael',
+      idade: 22,
+      feliz: true,
+      pets: ['cachorro','gato'],
+      veiculos: {
+        fz250: {
+          placa: 'XXX - 0000',
+          cor: 'preto'
+        },
+        palio: {
+          placa: 'ZZZ - 1111',
+          cor: 'prata'
+        }
+      },
+      andar: function(km){
+        alert(pessoa.nome+' andou '+km+ ' km')
+      }
+    }
+
+    pessoa.andar(20)
+
+
+    console.log(pessoa.veiculos.palio.placa)
+
+
+
+   /* pessoa.nome = 'Carlos'
+    pessoa.pets[0] = 'Pato'
+
+    console.log(pessoa.pets[0])*/
+
+  </script>
+</body>
+</html>

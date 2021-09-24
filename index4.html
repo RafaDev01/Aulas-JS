@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parentNode</title>
+</head>
+<body>
+  
+<div id="brasil">
+  <div id="bahia">
+    <div id="ilheus"></div>
+  </div>
+</div>
+
+<script>
+
+console.log(document.getElementById('ilheus').parentNode.parentNode.parentNode.parentNode)
+
+  console.log(document.getElementById('ilheus').parentNode)
+
+  console.log(document.getElementById('bahia').parentNode)
+
+</script>
+
+</body>
+</html>

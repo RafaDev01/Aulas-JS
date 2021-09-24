@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute</title>
+  <style>
+    .red{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">Flamengo</h1>
+
+  <button id="btn-set">Set</button>
+  <button id="btn-remove">Remove</button>
+  <button id="btn-get">Get</button>
+
+  <p id="class"></p>
+
+  <script>
+
+    document.getElementById('btn-set').addEventListener('click', function(){
+      document.getElementById('title').setAttribute('class', 'red')
+    })
+
+    document.getElementById('btn-remove').addEventListener('click', function(){
+      document.getElementById('title').removeAttribute('class', 'red')
+    })
+
+    document.getElementById('btn-get').addEventListener('click', function(){
+      var value = document.getElementById('title').getAttribute('class');
+      document.getElementById('class').innerHTML = value
+    })
+
+  </script>
+  
+</body>
+</html>

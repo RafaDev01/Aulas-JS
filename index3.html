@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>childNodes</title>
+</head>
+<body>
+  <!-- botao -->
+  <button id="btn">Ver lista</button>
+  <div>
+    <h1>Titulo</h1>
+    <p>texto</p>
+  </div>
+
+  <p id="resultado"></p>
+  <script>
+
+    console.log(document.body.childNodes);
+
+    var lista = document.body.childNodes
+
+    alert(lista[5].childNodes[3].childNodes[0].nodeValue)
+
+    /*alert(lista[1].nodeValue)// retorna o valor do nó*/
+
+
+    /*alert(lista[5].nodeType)if{
+      se retornar 1 é um no de elemento
+      se retornar 2 é um nó de atributo
+      se retornar 3 é um nó de texto
+      se retornar 8 é um nó de comentário
+    }*/
+
+    //alert(lista[5].nodeName)
+
+    //alert(lista[5].innerHTML)
+
+  </script>
+</body>
+</html>
